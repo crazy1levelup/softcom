@@ -1,10 +1,10 @@
 package com.firmasoft.eduard;
 
-public interface Salariu {
+interface Salariu {
 
-    public void getMoney(double sal);
+    void getMoney(double sal);
 
-    public void spendMoney(double expenditure);
+    void spendMoney(double expenditure);
 
 
 }

@@ -2,17 +2,15 @@ package com.firmasoft.eduard;
 
 public class Inginer extends Angajati implements Salariu {
 
-    String specializare;
+    private String specializare;
 
-    public Inginer(String specializare, String nume, long CNP) {
+    Inginer(String specializare, String nume, long CNP) {
         super(nume, CNP);
         this.specializare = specializare;
 
     }
 
-    public Inginer() {
-
-    }
+    Inginer() {}
 
     @Override
     public void getMoney(double sal) {
@@ -28,11 +26,11 @@ public class Inginer extends Angajati implements Salariu {
         }
     }
 
-    public void showIng() {
+    void showIng() {
         System.out.println("Inginer sistem: " + nume + ", CNP: " + CNP + ", specializare: " + specializare + "    Cont: " + valCont + ".");
     }
 
-    public void changeHard(int hard) {
+    void changeHard(int hard) {
         if (hard < 1) {
             System.out.println("Error, No hard has been changed");
         } else {
@@ -40,7 +38,7 @@ public class Inginer extends Angajati implements Salariu {
         }
     }
 
-    public void addRam(int ram) {
+    void addRam(int ram) {
         if (ram < 1) {
             System.out.println("Error! no ram to be added");
         } else {
