@@ -6,6 +6,7 @@ interface Salariu {
 
     void spendMoney(double expenditure);
 
+    void getGift();
 
 }
 

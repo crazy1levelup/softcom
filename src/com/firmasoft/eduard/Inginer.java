@@ -1,10 +1,10 @@
 package com.firmasoft.eduard;
 
-public class Inginer extends Angajati implements Salariu {
+public class Inginer extends Angajati implements Salariu{
 
     private String specializare;
 
-    Inginer(String specializare, String nume, long CNP) {
+    Inginer(String nume, long CNP, String specializare) {
         super(nume, CNP);
         this.specializare = specializare;
 
@@ -15,15 +15,22 @@ public class Inginer extends Angajati implements Salariu {
     @Override
     public void getMoney(double sal) {
         valCont += sal;
+        System.out.println(nume + " primeste salariul: " + valCont);
     }
 
     @Override
     public void spendMoney(double expenditure) {
-        if (expenditure > valCont) {
+        System.out.println(nume + " Foloseste " + expenditure + " lei din " + valCont);
+        if(expenditure > valCont) {
             System.out.println("Error! Esti sarac." + nume);
         } else {
             valCont = valCont - expenditure;
         }
+    }
+    @Override
+    public void getGift() {
+        valCont = valCont + 250;
+        System.out.println(nume + " got a gift for christmass +250 " + "    Cont curent: " + valCont);
     }
 
     void showIng() {
@@ -34,7 +41,10 @@ public class Inginer extends Angajati implements Salariu {
         if (hard < 1) {
             System.out.println("Error, No hard has been changed");
         } else {
-            valCont = valCont + 300 * hard;
+            int sum;
+            sum=hard*300;
+            valCont = valCont + sum;
+            System.out.println(nume + " a schimbat un hard, primeste " +sum + "    Cont curent: " + valCont);
         }
     }
 
@@ -42,8 +52,10 @@ public class Inginer extends Angajati implements Salariu {
         if (ram < 1) {
             System.out.println("Error! no ram to be added");
         } else {
-            valCont = valCont + ram * 200;
-
+            int sum;
+            sum = ram*200;
+            valCont = valCont + sum;
+            System.out.println(nume + " a schimbat un hard, primeste " +sum + "    Cont curent: " + valCont + "    Cont curent: " + valCont);
         }
     }
 

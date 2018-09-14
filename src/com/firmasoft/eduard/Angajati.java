@@ -7,13 +7,14 @@ public class Angajati {
     long CNP;
     double valCont = 0.0;
 
-    public Angajati(String nume, long CNP){
+    public Angajati(String nume, long CNP) {
         this.nume = nume;
         this.CNP = CNP;
 
     }
-public Angajati(){
 
-}
+    public Angajati() {
+
+    }
 
 }
