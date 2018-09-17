@@ -1,13 +1,13 @@
 package com.firmasoft.eduard;
+import java.lang.*;
 
-
-public class Person extends Angajati {
+public class Person{
     private String userName;
     private String name;
     private String familyName;
     private String addres;
 
-    public Person(String userName, String name, String familyName, String addres, String nume, long CNP){
+    public Person(String userName, String name, String familyName, String addres){
         super();
         this.userName = userName;
         this.name = name;
@@ -15,7 +15,16 @@ public class Person extends Angajati {
         this.addres = addres;
     }
 public void showPerson(){
-        System.out.println(userName + name + familyName + addres + nume + CNP);
+        System.out.println(userName + name + familyName + addres);
+}
+
+
+public void deleteChar(String str, int numar){
+        String front = str.substring(0, numar);
+        String back = str.substring(numar + 1);
+        String tog = front + back;
+        System.out.println(tog);
+
 }
 
     }

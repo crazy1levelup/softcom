@@ -7,6 +7,7 @@ public class Main {
         Secretar s2 = new Secretar("Alina", 1942313459893L, "engleza, franceza");
         Programator p2 = new Programator("Mircea", 1940721205560L, 2, "Java, C++, PHP");
         Inginer i2 = new Inginer("Cristi", 7483748594832L, "specialist in calculatoare");
+        Person person = new Person("este", "asda", "asdada", "adsdadad");
 
         s2.getMoney(1000);
         s2.spendMoney(300);
@@ -28,6 +29,10 @@ public class Main {
         i2.spendMoney(400);
         i2.getGift();
         i2.showIng();
+
+
+        person.deleteChar("Apa minerala Perla Harghitei. ", 7);
+
 
 
     }
