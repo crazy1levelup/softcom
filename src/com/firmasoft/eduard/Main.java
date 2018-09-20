@@ -32,7 +32,7 @@ public class Main {
 
 
         person.deleteChar("Apa minerala Perla Harghitei. ", 7);
-
+        System.out.print(person.deleteString("Posibilitate foarte mare", "mare"));
 
 
     }

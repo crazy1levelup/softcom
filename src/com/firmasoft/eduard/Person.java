@@ -19,13 +19,30 @@ public void showPerson(){
 }
 
 
-public void deleteChar(String str, int numar){
-        String front = str.substring(0, numar);
-        String back = str.substring(numar + 1);
-        String tog = front + back;
-        System.out.println(tog);
+public void deleteChar(String str, int numar) {
+    String front = str.substring(0, numar);
+    String back = str.substring(numar + 1);
+    String tog = front + back;
+    System.out.println(tog);
+}
+
+String deleteString(String strg , String theword){
+   int i = 0;
+   int n = theword.length();
+    while ( n <= strg.length()){
+        if ( strg.substring(i , n).equals(theword)){
+            return strg.substring( 0 , i) + strg.substring(n , strg.length());
+        }else {
+            n +=1;
+            i +=1;
+        }
+    }
+    return strg;
+
+
+    }
 
 }
 
-    }
+
 
