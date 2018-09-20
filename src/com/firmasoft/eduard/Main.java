@@ -29,14 +29,13 @@ public class Main {
         i2.spendMoney(400);
         i2.getGift();
         i2.showIng();
+        System.out.println("");
 
 
+        //Test programs
         person.deleteChar("Apa minerala Perla Harghitei. ", 7);
-        System.out.print(person.deleteWord("Posibilitate foarte mare", "mare"));
-
+        System.out.print(person.deleteWord("Este o idee buna", "buna"));
 
     }
-
-
 }
 
