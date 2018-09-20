@@ -26,13 +26,13 @@ public void deleteChar(String str, int numar) {
     System.out.println(tog);
 }
 
-String deleteString(String strg , String theword){
+String deleteWord(String strg , String theword){
    int i = 0;
    int n = theword.length();
     while ( n <= strg.length()){
         if ( strg.substring(i , n).equals(theword)){
-            return strg.substring( 0 , i) + strg.substring(n , strg.length());
-        }else {
+            return strg.substring( 0 , i) + strg.substring(n);
+        } else {
             n +=1;
             i +=1;
         }
