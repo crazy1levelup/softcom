@@ -8,7 +8,6 @@ public class Person{
     private String addres;
 
     public Person(String userName, String name, String familyName, String addres){
-        super();
         this.userName = userName;
         this.name = name;
         this.familyName = familyName;
