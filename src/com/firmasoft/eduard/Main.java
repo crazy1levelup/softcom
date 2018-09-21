@@ -8,6 +8,7 @@ public class Main {
         Programator p2 = new Programator("Mircea", 1940721205560L, 2, "Java, C++, PHP");
         Inginer i2 = new Inginer("Cristi", 7483748594832L, "specialist in calculatoare");
         Person person = new Person("este", "asda", "asdada", "adsdadad");
+        Encap encap = new Encap();
 
         s2.getMoney(1000);
         s2.spendMoney(300);
@@ -34,7 +35,12 @@ public class Main {
 
         //Test programs
         person.deleteChar("Apa minerala Perla Harghitei. ", 7);
-        System.out.print(person.deleteWord("Este o idee buna", "buna"));
+        System.out.println(person.deleteWord("Este o idee buna", "buna"));
+        //Encapsulation example
+        encap.setName("Marcel");
+        encap.setUserName("Marc3l1231923");
+        encap.setNumber(48);
+        System.out.println("NAme: " + encap.getName() + " UserName: " + encap.getUserName() + " nr: " + encap.getNumber());
 
     }
 }
