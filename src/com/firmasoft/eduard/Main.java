@@ -10,6 +10,7 @@ public class Main {
         Person person = new Person("este", "asda", "asdada", "adsdadad");
         Encap encap = new Encap();
 
+
         s2.getMoney(1000);
         s2.spendMoney(300);
         s2.getGift();
@@ -33,7 +34,7 @@ public class Main {
         System.out.println("");
 
 
-        //Test programs
+        //Test programs for strings
         person.deleteChar("Apa minerala Perla Harghitei. ", 7);
         System.out.println(person.deleteWord("Este o idee buna", "buna"));
         //Encapsulation example
@@ -41,7 +42,9 @@ public class Main {
         encap.setUserName("Marc3l1231923");
         encap.setNumber(48);
         System.out.println("NAme: " + encap.getName() + " UserName: " + encap.getUserName() + " nr: " + encap.getNumber());
-
+        encap.setCharacters("rege paragarafaramus");
+        encap.setTheCharacter("a");
+        System.out.println("In propozitia: " + encap.getCharacters() +", se gasesc " + encap.returnNumberOfSameChar() + " de " + encap.getTheCharacter());
     }
 }
 
