@@ -28,9 +28,8 @@ public class Encap {
     public Integer returnNumberOfSameChar(){
         int count =0;
         for (int i = 0; i< sentence.length(); i++){
-            if (sentence.substring(i, i + 1).equals(theCharacter)) {
-            count ++;
-            }
+            if (sentence.substring(i, i + 1).equals(theCharacter)){
+            count ++; }
         }
         return count;
     }
